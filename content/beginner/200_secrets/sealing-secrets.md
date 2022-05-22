@@ -82,9 +82,9 @@ kubectl logs -n kube-system sealed-secrets-controller-7bdbc75d47-5wxvf
 Output:
 {{< output >}}
 (...)
-2021/07/14 21:27:01 HTTP server serving on :8080
-2021/07/15 13:22:20 Updating octank/database-credentials
-2021/07/15 13:22:20 Event(v1.ObjectReference{Kind:"SealedSecret", Namespace:"octank", Name:"database-credentials", UID:"abc9b6ab-fe69-453a-8654-c9593de935c7", APIVersion:"bitnami.com/v1alpha1", ResourceVersion:"104915", FieldPath:""}): type: 'Normal' reason: 'Unsealed' SealedSecret unsealed successfully
+2022/05/22 09:12:17 HTTP server serving on :8080
+2022/05/22 09:13:38 Updating octank/database-credentials
+2022/05/22 09:13:38 Event(v1.ObjectReference{Kind:"SealedSecret", Namespace:"octank", Name:"database-credentials", UID:"dcdf5672-042a-41a2-a453-0891742b867d", APIVersion:"bitnami.com/v1alpha1", ResourceVersion:"1543110", FieldPath:""}): type: 'Normal' reason: 'Unsealed' SealedSecret unsealed successfully
 {{< /output >}}
 
 Verfiy that the **database-credentials** Secret unsealed from the SealedSecret was deployed by the controller to the *octank* namespace.
